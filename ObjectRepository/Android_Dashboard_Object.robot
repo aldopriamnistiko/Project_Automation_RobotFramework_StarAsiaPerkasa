@@ -1,0 +1,18 @@
+*** Variables ***
+
+${verifyabsensi}            xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${verifyDirectStarPay}      xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifybuttonApporal}      xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifyButtonBantuan}      xpath=//*[@class = 'android.widget.TextView' and (@text = '󰋎' or . = '󰋎')]
+${VerifyButtonClaim}        xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifyButtonKehadiran}    xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifyButtonMore}         xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifyButtonSign}         xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifyButtonSOS}          xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifyButtonStarpay}      xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifyListKehadiran1}     xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifyListKehadiran2}     xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifyListKehadiran4}     xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifyListKehadiran5}     xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifyListKehadiran7}     xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
+${VerifyAchievement}        xpath=//*[@class = 'android.view.ViewGroup' and (@text = '' or . = '')]
