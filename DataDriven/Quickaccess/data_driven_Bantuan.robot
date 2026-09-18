@@ -21,3 +21,4 @@ Read Workbook Bantuan
     Set Suite Variable    ${deskripsi}                ${row}[Deskripsi]
     Set Suite Variable    ${screenshot}               ${row}[Screenshot]
     Set Suite Variable    ${ValuePesanLaporanSaya}    ${row}[PesanTiketLaporanSaya]
+    Set Suite Variable    ${judul_BeriMasukan}        ${row}[judul_Beri_Masukan]

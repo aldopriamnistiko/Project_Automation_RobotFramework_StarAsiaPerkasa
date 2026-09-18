@@ -3,7 +3,7 @@ Library    AppiumLibrary
 
 *** Variables ***
 ${APPIUM_SERVER}    http://127.0.0.1:4723
-${DEVICE_UDID}     10.147.17.242:5577
+${DEVICE_UDID}     192.168.1.26:5577
 ${APP_PACKAGE}     com.ppa_ops.superdev
 ${APP_ACTIVITY}    com.ppa_ops.superdev/com.ppa_ops.MainActivity
 

@@ -15,17 +15,7 @@ open Application dan login
 Quick Access Bantuan
     Read Workbook Bantuan
     Akses menu Bantuan
-    Akses sub menu Laporan saya
+    Akses sub menu Beri Masukan
 Logout
-    swipe Chunk
+    Swipe Chunk
     LogOut
-
-
-
-
-
-
-
-
-
-

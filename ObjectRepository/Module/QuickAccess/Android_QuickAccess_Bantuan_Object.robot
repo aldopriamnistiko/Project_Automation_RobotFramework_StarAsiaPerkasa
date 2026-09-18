@@ -38,14 +38,12 @@ ${UploadGambar_FirstImage2}          xpath=//hierarchy/android.widget.FrameLayou
 ${btn_confirm_image_from_samsung}    xpath=//*[@class = 'android.widget.TextView' and (@text = 'Done' or . = 'Done')]
 ${btn_accept_image}                  xpath=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.view.ViewGroup[1]/androidx.appcompat.widget.LinearLayoutCompat[1]/android.widget.Button[1]
 ${UploadGambar_FirstImage}           xpath=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/androidx.drawerlayout.widget.DrawerLayout[1]/android.widget.ScrollView[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[2]/android.widget.LinearLayout[1]/android.view.ViewGroup[1]/android.widget.GridView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]
-
 # fitur take foto (Shutter kamera)
 ${field_unggahFoto}    xpath=//*[contains(@content-desc,'Unggah gambar di sini')]
 ${btn_ambil_foto}      xpath=//*[contains(@content-desc,'Ambil Foto')]
 ${shutter_button}      xpath=//android.widget.RelativeLayout[@resource-id='com.sec.android.app.camera:id/shutter_area']
 ${btn_OK}              xpath=//android.widget.Button[@content-desc='OK']
 ${btn_crop}            xpath=//android.widget.Button[@content-desc="Crop"]
-
 # btn kirim
 ${btn_kirim_LAPORKAN}    xpath=//*[@content-desc="Kirim"]
 ${BTN_OK_LAPORKAN}       xpath=//*[@content-desc="OK"]
@@ -64,3 +62,12 @@ ${BtnBatalTutupLaporanSaya}        xpath=//*[contains(@content-desc,'Batal')]
 ${BtnLanjutkanTutupLaporanSaya}    xpath=//*[contains(@content-desc,'Lanjutkan')]
 ${PopupKonfirmTutupTiket}          xpath=//android.widget.TextView[contains(@text,'Tutup Tiket')]
 ${btn_kirim_chat_laporan_saya}     xpath=//android.view.ViewGroup[@content-desc="󰒊"]
+
+# Beri Masukan
+${btn_BeriMasukan}                 xpath=//*[@text="Beri masukan"]
+${verify_header_BeriMasukan}         xpath=//*[contains(@text,'Beri Masukan')]
+${field_judul_BeriMasukan}         xpath=//*[contains(@text,'Judul singkat')]
+${field_deskripsi_BeriMasukan}      xpath=//*[contains(@text,'Deskripsikan')]
+${lampirkan_bukti_BeriMasukan}          xpath=//*[contains(@text,'Pilih')]
+${search_option_BeriMasukan}    xpath=//*[contains(@text,'Cari opsi...')]
+${result_option_BeriMasukan}    xpath=(//android.view.ViewGroup[contains(@content-desc,"󰗡")])[1]

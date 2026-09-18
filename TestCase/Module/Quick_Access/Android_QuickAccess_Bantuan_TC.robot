@@ -378,7 +378,110 @@ Akses sub menu Laporan saya
     Press Keycode   4
     Sleep  1s
     Capture Page Screenshot  
+    Sleep  1s
+Akses sub menu Beri Masukan
+    Wait Until Element Is Visible  ${btn_BeriMasukan}  20s
+    Sleep  1s
+    Click Element  ${btn_BeriMasukan}
+    Sleep  1s
+    Wait Until Element Is Visible  ${verify_header_BeriMasukan}    20s
+    Sleep  1s
+    Element Should Be Visible  ${verify_header_BeriMasukan}
+    Sleep  1s
+    Capture Page Screenshot
+    Sleep  1s
+    Input Text  ${field_judul_BeriMasukan}  ${judul_BeriMasukan}
+    Sleep  1s
+    Input Text  ${field_deskripsi_BeriMasukan}  ${deskripsi}
+    Sleep  1s
+    Click Element  ${lampirkan_bukti_BeriMasukan}
+    Sleep  1s
+    Input Text  ${search_option_BeriMasukan}  ${screenshot}
+    Sleep  1s
+    Click Element  ${result_option_BeriMasukan}
+    Sleep  1s
+    Swipe
+    ...    start_x=500
+    ...    start_y=1800
+    ...    end_x=500
+    ...    end_y=500
+    Sleep  1s
+    Capture Page Screenshot
+    Sleep  1s
+    # unggah foto step
+    Click Element  
+    ...     ${field_unggahFoto}
+    Sleep  1s
+    Capture Page Screenshot  
+    Sleep  1s
+    Click Element  
+    ...     ${btn_ambil_foto}
+    Sleep  1s
+    Capture Page Screenshot  
+    Sleep  1s
+     
+    ${camera_popup}=    Run Keyword And Return Status
+    ...    Wait Until Element Is Visible
+    ...    xpath=//*[contains(@text,"While using the app")]
+    ...    2s
 
+    IF    ${camera_popup}
+        Click Element    xpath=//*[contains(@text,"While using the app")]
+        Log To Console    Camera permission diizinkan
+    END
+
+    Sleep  1s
+    ${shutter_exists}=    Run Keyword And Return Status
+        ...    Wait Until Element Is Visible
+        ...    ${shutter_button}
+        ...    10s
+
+        IF    ${shutter_exists}
+            Log To Console    Samsung Camera terbuka
+
+            Click Element    ${shutter_button}
+            Sleep    1s
+            Wait Until Element Is Visible  
+            ...     ${btn_OK}    
+            ...     20s
+            Sleep  
+            ...     1s
+            Click Element  ${btn_OK}
+            Wait Until Element Is Visible  
+            ...     ${btn_crop}
+            ...     20s
+            Sleep  
+            ...     1s
+            Click Element  ${btn_crop}
+            Sleep  
+            ...     1s
+            Log To Console    Foto berhasil diambil
+        ELSE
+            Log To Console    Shutter Samsung Camera tidak ditemukan
+        END
+
+        ${done_exists}=    Run Keyword And Return Status
+        ...    Wait Until Element Is Visible
+        ...    ${done_button}
+        ...    5s
+
+        IF    ${done_exists}
+            Click Element    ${done_button}
+            Log To Console    Klik Done berhasil
+        END
+    Sleep  1s
+    Capture Page Screenshot
+    Sleep  1s
+    click Element  ${btn_kirim_LAPORKAN}
+    Sleep  1s
+    Wait Until Element Is Visible  ${BTN_OK_LAPORKAN}  20s
+    Sleep  1s
+    Capture Page Screenshot
+    Sleep  1s
+    Click Element  ${BTN_OK_LAPORKAN}
+    Sleep  1s
+    Capture Page Screenshot
+    Sleep  1s
 
 
 
