@@ -3,7 +3,7 @@ Library    AppiumLibrary
 
 *** Variables ***
 ${APPIUM_SERVER}    http://127.0.0.1:4723
-${DEVICE_UDID}     192.168.1.26:5577
+${DEVICE_UDID}     10.147.17.242:5577
 ${APP_PACKAGE}     com.ppa_ops.superdev
 ${APP_ACTIVITY}    com.ppa_ops.superdev/com.ppa_ops.MainActivity
 
@@ -34,3 +34,34 @@ Open Android Application
  
 
     # [Teardown]    Close Application
+
+Normalize Text
+    [Arguments]    ${text}
+
+    IF    $text is None
+        RETURN    ${EMPTY}
+    END
+
+    # Non-breaking space → normal space
+    ${text}=    Replace String    ${text}    \u00A0    ${SPACE}
+
+    # Tab / newline / carriage return → space
+    ${text}=    Replace String Using Regexp    ${text}    [\t\n\r]+    ${SPACE}
+
+    # Multiple spaces → single space
+    ${text}=    Replace String Using Regexp    ${text}    \s+    ${SPACE}
+
+    # Trim whitespace
+    ${text}=    Strip String    ${text}
+
+    RETURN    ${text}
+
+Click Radio By Question
+    [Arguments]    ${question}    ${answer}
+
+    ${xpath}=    Set Variable    //android.widget.TextView[@text="${question}"]/following-sibling::android.view.ViewGroup[@content-desc="${answer}"]
+
+    Log To Console    CLICK RADIO: ${question} -> ${answer}
+
+    Wait Until Element Is Visible    ${xpath}    20s
+    Click Element    ${xpath}
