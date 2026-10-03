@@ -14,4 +14,4 @@ verify dashboard
     Verify Dashboard After Login
 Logout
     Swipe Chunk
-    LogOut
+    logout android

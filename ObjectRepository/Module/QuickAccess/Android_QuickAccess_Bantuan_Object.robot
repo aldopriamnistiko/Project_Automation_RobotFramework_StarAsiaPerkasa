@@ -3,6 +3,10 @@
 ${btn_bantuan}            xpath=//*[contains(@text,'Bantuan')]
 ${verify_page_bantuan}    xpath=//*[contains(@text,'Pusat Bantuan')]
 
+# Riwayat pembaruan aplikai PPA Team
+${btn_Riwayt_pembaruan_Aplikasi}    xpath=//*[contains(@content-desc,'Apa yang Baru')]
+${verify_page_riwayat_pembaruanaplikasiPPATeam}     xpath=(//*[contains(@text,'Apa yang Baru')])[1]
+
 # chat asist virtual
 ${btn_chat_virtual}       xpath=//*[contains(@content-desc,'Asisten')]
 ${verify_chat_virtual}    xpath=//*[contains(@text,'Chat Support')]

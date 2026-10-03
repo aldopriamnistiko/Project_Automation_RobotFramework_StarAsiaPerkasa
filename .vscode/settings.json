@@ -1,3 +1,19 @@
 {
-    "python-envs.defaultEnvManager": "ms-python.python:system"
+    "rfLanguageServer.libraries": [
+        "BuiltIn-3.0.4",
+        "String-3.0.4",
+        "Collections-3.0.4",
+        "AppiumLibrary"
+    ],
+    "rfLanguageServer.includePaths": [
+        "**/*.robot",
+        "**/*.resource"
+    ],
+    "rfLanguageServer.logLevel": "debug",
+    "[robotframework]": {
+    "editor.defaultFormatter": "robocorp.robotframework-lsp",
+    "editor.formatOnSave": false
+},
+"python-envs.defaultEnvManager": "ms-python.python:system"
+    
 }

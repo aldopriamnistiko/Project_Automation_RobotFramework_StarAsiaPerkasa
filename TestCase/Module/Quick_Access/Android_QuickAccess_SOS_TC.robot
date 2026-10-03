@@ -16,6 +16,7 @@ Akses menu SOS
     Sleep  1s
     Capture Page Screenshot   
     Sleep  7s
+Input form SOS
 # popup permission camera
     Wait Until Element Is Visible  
     ...     ${field_unggahFoto}
@@ -280,6 +281,7 @@ Lokasi
 detail lokasi
     Wait Until Element Is Visible  
     ...     ${field detail lokasi}
+    Capture Page Screenshot  
     Sleep  1s
     input Text  
     ...     ${field detail lokasi}
@@ -290,10 +292,17 @@ kirim
     Wait Until Element Is Visible  
     ...     ${btn_kirim}
     ...     20s
+    Capture Page Screenshot  
     # Element Should Be Visible  
     # ...     ${btn_kirim}
     Click Element       ${btn_kirim}
+    Capture Page Screenshot  
     Sleep  1s
+Back after create form SOS
+    Press Keycode  4  
+    Sleep  2s
+    Capture Page Screenshot 
+    Sleep  2s
 verify after create form SOS
     Element Should Be Visible 
     ...     ${verifyafter create form SOS}

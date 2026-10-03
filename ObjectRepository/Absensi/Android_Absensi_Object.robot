@@ -13,4 +13,21 @@ ${set_time_field_menit}                xpath=//android.widget.TextView[@text="Ty
 ${icon_key}                            xpath=//*[@class = 'android.widget.ImageButton' and @resource-id = 'android:id/toggle_mode' and (@text = '' or . = '')]
 ${btn_OKE_absensi}                     xpath=//android.widget.TimePicker//android.widget.Button[@text='OK']
 ${btn_setuju_dan_kirim_absensi}        xpath=//*[contains(@content-desc,'SETUJU & KIRIM')]
-${btn_Ok_absensi}                      xpath=//android.widget.Button[@text='OK']
+${btn_Ok_absensi}                      xpath=//*[contains(@text,'OK')]
+
+# absensi pulang
+${btn_absensi_pulang}                  xpath=//*[contains(@text,'Absen Keluar')]
+${verify_popup_user_Clock_out}               xpath=//*[contains(@text,'Check Out Confirmation')]
+${btn_setuju_dan_kirim_absensi_pulang}    xpath=//*[contains(@text,'CONFIRM')]
+
+
+
+
+
+
+
+
+
+
+
+

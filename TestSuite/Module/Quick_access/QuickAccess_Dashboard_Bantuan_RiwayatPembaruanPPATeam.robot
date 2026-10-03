@@ -12,10 +12,11 @@ open Application dan login
     Read workbook login
     Open Android Application
     Login Android
-# Quick Access Bantuan
-#     Read Workbook Bantuan
-#     Akses menu Bantuan
-#     Akses sub menu Chat Virtual
-# Logout
-#     Swipe Chunk
-#     LogOut
+Quick Access Bantuan
+    Read Workbook Bantuan
+    Akses menu Bantuan
+    Akses sub menu riwayat pembaruan aplikasi PPA Team
+    # Sleep  7s
+Logout
+    Swipe Chunk
+    logout android

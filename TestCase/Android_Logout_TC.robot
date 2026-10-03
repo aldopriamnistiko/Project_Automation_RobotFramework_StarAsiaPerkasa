@@ -13,7 +13,7 @@ Swipe Chunk
     ...     1s
     Capture Page Screenshot  
     Sleep  1s
-LogOut
+logout android
     Wait Until Element Is Visible   
     ...     ${logo_profil}      
     ...     20s

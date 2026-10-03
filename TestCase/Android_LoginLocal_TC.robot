@@ -81,6 +81,9 @@ Login Android
     ...     ${btn_login}
     Sleep  
     ...     3s
+    Press Keycode  4  
+    Sleep  
+    ...     1s
     # handler popup
     ${popup_exists}=    Run Keyword And Return Status
     ...    Wait Until Element Is Visible

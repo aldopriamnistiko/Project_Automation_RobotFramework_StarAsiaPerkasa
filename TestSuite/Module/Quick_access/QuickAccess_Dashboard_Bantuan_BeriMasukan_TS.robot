@@ -18,4 +18,4 @@ Quick Access Bantuan
     Akses sub menu Beri Masukan
 Logout
     Swipe Chunk
-    LogOut
+    logout android

@@ -14,10 +14,10 @@ Read workbook SOS
     ${tanggal}=     Get From List    ${data}    0
     ${pilih_JK}=    Get From List    ${data}    1
 
-    Log To Console    
-    ...               ROW TANGGAL = ${tanggal}
-    ...               ROW JENIS KEJADIAN = ${pilih_JK}
-    ...               ROW BARIS = ${row}
+
+    Log To Console    ROW TANGGAL = ${tanggal}
+    Log To Console    ROW JENIS KEJADIAN = ${pilih_JK}
+    Log To Console    ROW BARIS = ${row}
 
     Set Suite Variable    ${target_tanggal}          ${tanggal}[target_date]
     Set Suite Variable    ${waktu}                   ${tanggal}[waktu]

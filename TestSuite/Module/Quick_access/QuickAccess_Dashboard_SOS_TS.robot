@@ -15,6 +15,7 @@ open aplication dan login
 Quick Access SOS
     Read workbook SOS
     Akses menu SOS
+    Input form SOS
     Waktu Kejadian  ${target_tanggal}   ${waktu}
     pilih jenis kejadian
     Deskripsi kejadian
@@ -23,6 +24,7 @@ Quick Access SOS
     Lokasi
     detail lokasi
     kirim
+    
 Logout
     Swipe Chunk
-    LogOut
+    logout android

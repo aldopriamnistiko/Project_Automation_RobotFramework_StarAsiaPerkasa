@@ -14,10 +14,10 @@ open Application dan login
     Login Android
 Quick Access Bantuan
     Read Workbook Bantuan
-    FOR     ${i}    IN RANGE        5
+    # FOR     ${i}    IN RANGE        5
         Akses menu Bantuan
         Akses sub menu Laporkan Masalah
-    END
+    # END
 Logout
     Swipe Chunk
-    LogOut
+    logout android

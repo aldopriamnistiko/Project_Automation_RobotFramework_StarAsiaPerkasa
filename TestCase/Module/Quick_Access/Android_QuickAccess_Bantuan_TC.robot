@@ -15,46 +15,76 @@ Akses menu Bantuan
     Sleep                            1s
     Element Should Be Visible        ${verify_page_bantuan}
     Sleep                            1s
-    Capture Page Screenshot          
-Akses sub menu Chat Virtual
-    Wait Until Element Is Visible    ${btn_chat_virtual}       20s
-    Sleep                            1s
-    Click Element                    ${btn_chat_virtual}
-    Sleep                            1s
-    Capture Page Screenshot          
-    Sleep                            1s
-    Wait Until Element Is Visible    ${verify_chat_virtual}    20s
-    Sleep                            1s
-    Input Text                       
-    ...                              ${field_chat_support}
-    ...                              ${chat_asist_virtual}
-    Sleep                            1s
-    Swipe
-    ...                              start_x=914
-    ...                              start_y=2131
-    ...                              end_x=500
-    ...                              end_y=1600
-    Sleep                            1s
-    Click Element                    ${btn_enter_to_asking}
-    Sleep                            1s
-    Capture Page Screenshot          
-    Sleep                            1s
+    Capture Page Screenshot  
+Akses sub menu riwayat pembaruan aplikasi PPA Team
+    Wait Until Element Is Visible  ${btn_Riwayt_pembaruan_Aplikasi}  20s
+    Sleep  1s
+    Click Element  ${btn_Riwayt_pembaruan_Aplikasi}
+    Wait Until Element Is Visible  ${verify_page_riwayat_pembaruanaplikasiPPATeam}  20s
+    Sleep  1s
+    Element Should Be Visible  ${verify_page_riwayat_pembaruanaplikasiPPATeam}  
+    Sleep  1s
+    Capture Page Screenshot  
+    Sleep  1s
+    FOR     ${i}    IN RANGE    13
+        Swipe
+            ...                              start_x=500
+            ...                              start_y=1725
+            ...                              end_x=500
+            ...                              end_y=300  
+        Sleep  1s
+        Capture Page Screenshot 
+        Sleep  1s
+    END 
+    Sleep  1s
+    Press Keycode  4  
+    
+      
+      
+      
+      
+    
+    
+            
+# Akses sub menu Chat Virtual
+#     Wait Until Element Is Visible    ${btn_chat_virtual}       20s
+#     Sleep                            1s
+#     Click Element                    ${btn_chat_virtual}
+#     Sleep                            1s
+#     Capture Page Screenshot          
+#     Sleep                            1s
+#     Wait Until Element Is Visible    ${verify_chat_virtual}    20s
+#     Sleep                            1s
+#     Input Text                       
+#     ...                              ${field_chat_support}
+#     ...                              ${chat_asist_virtual}
+#     Sleep                            1s
+#     Swipe
+#     ...                              start_x=914
+#     ...                              start_y=2131
+#     ...                              end_x=500
+#     ...                              end_y=1600
+#     Sleep                            1s
+#     Click Element                    ${btn_enter_to_asking}
+#     Sleep                            1s
+#     Capture Page Screenshot          
+#     Sleep                            1s
 
-    # FOR              ${i}    IN RANGE    2
-    press Keycode                    4
-    Sleep                            1s
-    Capture Page Screenshot  
-    Sleep  1s
-    # END
-    Wait Until Element Is Visible    
-    ...                              ${btn_Akhiri_chat}
-    ...                              20s
-    Sleep                            1s
-    Click Element                    ${btn_Akhiri_chat}
-    Sleep                            1s
-    Capture Page Screenshot  
-    Sleep  1s
-    # Press Keycode                    4
+#     # FOR              ${i}    IN RANGE    2
+#     press Keycode                    4
+#     Sleep                            1s
+#     Capture Page Screenshot  
+#     Sleep  1s
+#     # END
+#     Wait Until Element Is Visible    
+#     ...                              ${btn_Akhiri_chat}
+#     ...                              20s
+#     Sleep                            1s
+#     Click Element                    ${btn_Akhiri_chat}
+#     Sleep                            1s
+#     Capture Page Screenshot  
+#     Sleep  1s
+#     # Press Keycode                    4
     # Sleep                            1s
 Akses sub menu Laporkan Masalah
     Wait Until Element Is Visible    ${btn_laporkan_masalah}       20s

@@ -18,7 +18,7 @@ Quick Access Bantuan
     Akses sub menu Laporan saya
 Logout
     swipe Chunk
-    LogOut
+    logout android
 
 
 

@@ -1,6 +1,6 @@
 *** Settings ***
 Resource    ../../TestCase/Android_LoginLocal_TC.robot
-# Resource    ../../../TestCase/Android_Logout_TC.robot
+Resource    ../../TestCase/Android_Logout_TC.robot
 Resource    ../../Keyword/open_application_keyword.robot
 Resource    ../../DataDriven/data_driven_login.robot
 Resource    ../../DataDriven/Absensi/data_driven_Absensi.robot
@@ -29,3 +29,8 @@ absesnsi checkin
     ...     ${Kesehatan}    
     ...     ${Obat}   
     sleep    7s
+logout
+    Swipe Chunk
+    logout android
+
+    

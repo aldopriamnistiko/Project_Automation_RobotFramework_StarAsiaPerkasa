@@ -168,7 +168,18 @@ Informasi Umum
     sleep    1s
 
 Absensi Checkout
-
+    wait until element is visible    ${btn_absensi_pulang}    20s
+    sleep    1s
+    capture page screenshot
+    sleep    1s
+    Click Element    ${btn_absensi_pulang}
+    sleep    1s
+    capture page screenshot
+    wait until element is visible    ${verify_popup_user_Clock_out}    20s
+    sleep    1s
+    element should be visible    ${verify_popup_user_Clock_out}
+    sleep    1s
+    Click Element    ${btn_setuju_dan_kirim_absensi_pulang}
 
 
 

@@ -69,7 +69,9 @@ Login Android
     Click Element  
     ...     ${btn_login}
     Sleep  
-    ...     1s
+    ...     2s
+    Press Keycode    4
+    Sleep  1s
     ${popup_exists}=    Run Keyword And Return Status
     ...    Wait Until Element Is Visible
     ...    xpath=//*[contains(@text,"Allow") or contains(@text,"Don't allow")]

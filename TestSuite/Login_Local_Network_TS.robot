@@ -13,4 +13,4 @@ login
     # Sleep  10s
 Logout
     Swipe Chunk
-    LogOut
+    logout android
