@@ -1,0 +1,10 @@
+*** Variables ***
+${btn_Moremenu_TTD}           xpath=//*[contains(@content-desc,'Tanda Tangan Dokumen')]
+${verify_page_ttd}            xpath=//*[contains(@text,'Tanda Tangan Dokumen')]
+${btn_reset}                  xpath=//*[contains(@content-desc,'Reset')]
+${btn_semua_tanggal}          xpath=//*[contains(@content-desc,'Semua Tanggal')]
+${verify_tidakada_dokumen}    xpath=//*[contains(@text,'Tidak ada dokumen ditemukan')]
+${verify_page_ttd}            xpath=//*[contains(@text,'Tanda Tangan Dokumen')]
+${btn_filter}                 xpath=//android.view.ViewGroup[contains(@content-desc,'All') or contains(@content-desc,'Need Action') or contains(@content-desc,'Pending') or contains(@content-desc,'Completed') or contains(@content-desc,'Rejected')]
+${btn_terapkan_filter}        xpath=//*[contains(@content-desc,'Terapkan Filter')]
+${btn_tanggal}                xpath=//*[contains(@content-desc,'󰃭')]

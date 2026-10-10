@@ -7,6 +7,9 @@ Resource    ../../../ObjectRepository/Module/More_menu/VerifyAllFiture_Object/An
 Akses more menu all services
     Wait Until Element Is Visible       ${btn_more_menu}                             20s
     Click Element                       ${btn_more_menu}
+    Sleep  1s
+    Capture Page Screenshot  
+    Sleep  1s
 Akses more menu SOS Laporkan Kejadian
     Wait Until Element Is Visible  ${fitur_sos_laporkan_kejadinan}  20s
     Sleep  1s
